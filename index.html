@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sudha Hing | Premium Asafoetida</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 1000;
+    }
+    .whatsapp-float img {
+      height: 60px;
+      width: 60px;
+      cursor: pointer;
+    }
+    .qr-code-about {
+      float: right;
+      margin-left: 2rem;
+      animation: floatQR 2s infinite ease-in-out;
+      text-align: center;
+    }
+    .qr-code-about img {
+      max-width: 120px;
+    }
+    @keyframes floatQR {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-8px);
+      }
+    }
+    .map-container {
+      text-align: center;
+      padding: 2rem;
+    }
+    .map-container iframe {
+      width: 90%;
+      height: 300px;
+      border: none;
+      border-radius: 10px;
+    }
+    .hero {
+      text-align: center;
+      padding: 2rem;
+      background-color: #f8f8f8;
+    }
+    .navbar {
+      background-color: #333;
+      overflow: hidden;
+    }
+    .navbar ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .navbar li {
+      margin: 0 1rem;
+    }
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      padding: 1rem;
+      display: block;
+      transition: background 0.3s;
+    }
+    .navbar a:hover {
+      background-color: #555;
+    }
+    .sticky {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 100;
+    }
+    .about, .catalogue, .contact {
+      padding: 2rem;
+    }
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 1rem;
+    }
+    .product-card {
+      width: 300px;
+      border: 1px solid #ddd;
+      padding: 1rem;
+      border-radius: 10px;
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .product-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    form input, form textarea, form button {
+      display: block;
+      width: 100%;
+      margin-bottom: 1rem;
+      padding: 0.8rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    form button {
+      background-color: #28a745;
+      color: white;
+      border: none;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    form button:hover {
+      background-color: #218838;
+    }
+    footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+    @media (max-width: 768px) {
+      .qr-code-about {
+        float: none;
+        margin: 2rem auto;
+      }
+      .products {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="hero">
+    <div class="overlay">
+      <img src="images/logo.png" alt="Sudha Hing Logo" style="height: 80px; margin-bottom: 1rem;">
+      <h1>Sudha Hing</h1>
+      <p>Shudhata ka Vaada, Swad ka Jaadu <br><span style="font-size:0.9rem;">शुद्धता का वादा, स्वाद का जादू</span></p>
+    </div>
+  </header>
+
+  <nav class="navbar">
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#catalogue">Catalogue</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="about" id="about">
+  <h2>About Sudha Hing</h2>
+  <div class="qr-code-about">
+    <p style="font-weight: bold; font-size: 0.9rem;">Scan WhatsApp</p>
+    <img src="images/whatsapp-qr.png" alt="WhatsApp QR">
+  </div>
+  <p>
+    Sudha Hing is your trusted source for premium quality Hing (Asafoetida), sourced from the finest farms and processed with utmost care. Our products bring unmatched aroma and taste to every dish.
+  </p>
+  <p>
+    सुधा हींग आपके भरोसेमंद स्रोत हैं उच्च गुणवत्ता वाली हींग के लिए, जिसे बेहतरीन खेतों से प्राप्त किया गया है और अत्यंत सावधानी से प्रोसेस किया गया है। हमारे उत्पाद हर व्यंजन में बेमिसाल खुशबू और स्वाद लाते हैं।
+  </p>
+
+  <p><strong>What is Hing (Asafoetida)?</strong></p>
+  <p><em>Hing</em>, also known as <em>Asafoetida</em>, is a spice derived from the resin of the ferula plant, mostly found in the Middle East and Central Asia. Its strong pungent aroma transforms when cooked, giving a deep umami and savory flavor. For centuries, it has been a cornerstone of Indian cooking, Ayurvedic medicine, and digestive wellness.</p>
+
+  <p><strong>हींग क्या है?</strong></p>
+  <p><em>हींग</em> यानि ऐसोफेटीडा (जो की प्लांट के ग्दाज छिन्क से निकाली जाती है), भारतीय खान की आञग स्पाइसों में एक आवश्यक ग्ाली जाघा है। ऐयुर्वेद और चिकित्सा चिकित्सा में भी इसका कुब अन्य अमूल स्थान रहा है।</p>
+
+  <p><strong>Why Choose <span style="color:#28a745">Sudha Hing</span>?</strong></p>
+  <ul>
+    <li><strong>11+ Years of Trust:</strong> Serving households and businesses with the purest Hing for over a decade.</li>
+    <li><strong>Best in Segment:</strong> Known for its powerful aroma, longer shelf life, and high customer satisfaction.</li>
+    <li><strong>Pure & Natural:</strong> No adulteration, no fillers, just 100% premium grade Asafoetida.</li>
+    <li><strong>Handpicked & Hygienic:</strong> Each batch is selected and packed under strict quality checks.</li>
+    <li><strong>Multiple Packaging:</strong> Available in jars, sachets, and bulk for all needs.</li>
+    <li><strong>Customer Support:</strong> We are always just a WhatsApp away.</li>
+  </ul>
+
+  <p><strong>क्यों चुनें <span style="color:#28a745">Sudha Hing</span>?</strong></p>
+  <ul>
+    <li><strong>11 साल का अनुभव:</strong> एक ट्रस्टेड नाम और गुणवत्ता से युक्त हींग की चौटिछ साल चालू सेवाओं की सेवा कार्य कर रहे हैं।</li>
+    <li><strong>सेगमेंट में श्रेष्ठ:</strong> न्यूटे अरोमा, ज्यादा टीछ और उच्च ग्राहकता का भव प्र्योक्ता चिन्हित्स ग्राहक की जाती है।</li>
+    <li><strong>शुद्ध और कृत्रिम:</strong> कोई मिश्र्ण, कोई भारी नहीं। केवल एग्रेड हींग की गारंटी की आशासक्तता!</li>
+    <li><strong>चुनी गैओं और स्वछत्त पैकिंग:</strong> की गुणवत्ता के साथ चुनी जांच की जाती है।</li>
+    <li><strong>विभिन चैनों में उपलब्ध:</strong> जार, सैचेट और थोक के लिए उपलब्ध!</li>
+    <li><strong>बेहतरीन जनसंग:</strong> ट्यूरंग के लिए WhatsApp पर हमेशा कार!</li>
+  </ul>
+</section>
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sudha Hing | Premium Asafoetida</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 1000;
+    }
+    .whatsapp-float img {
+      height: 60px;
+      width: 60px;
+      cursor: pointer;
+    }
+    .qr-code-about {
+      float: right;
+      margin-left: 2rem;
+      animation: floatQR 2s infinite ease-in-out;
+      text-align: center;
+    }
+    .qr-code-about img {
+      max-width: 120px;
+    }
+    @keyframes floatQR {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-8px);
+      }
+    }
+    .map-container {
+      text-align: center;
+      padding: 2rem;
+    }
+    .map-container iframe {
+      width: 90%;
+      height: 300px;
+      border: none;
+      border-radius: 10px;
+    }
+    .hero {
+      text-align: center;
+      padding: 2rem;
+      background-color: #f8f8f8;
+    }
+    .navbar {
+      background-color: #333;
+      overflow: hidden;
+    }
+    .navbar ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .navbar li {
+      margin: 0 1rem;
+    }
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      padding: 1rem;
+      display: block;
+      transition: background 0.3s;
+    }
+    .navbar a:hover {
+      background-color: #555;
+    }
+    .sticky {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 100;
+    }
+    .about, .catalogue, .contact {
+      padding: 2rem;
+    }
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 1rem;
+    }
+    .product-card {
+      width: 300px;
+      border: 1px solid #ddd;
+      padding: 1rem;
+      border-radius: 10px;
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .product-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    .product-card a button {
+      background-color: #25d366;
+      color: white;
+      padding: 0.6rem 1.2rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+      margin-top: 0.5rem;
+    }
+    .product-card a button:hover {
+      background-color: #1da851;
+    }
+    form input, form textarea, form button {
+      display: block;
+      width: 100%;
+      margin-bottom: 1rem;
+      padding: 0.8rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    form button {
+      background-color: #28a745;
+      color: white;
+      border: none;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    form button:hover {
+      background-color: #218838;
+    }
+    footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+    @media (max-width: 768px) {
+      .qr-code-about {
+        float: none;
+        margin: 2rem auto;
+      }
+      .products {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <section class="catalogue" id="catalogue">
+    <h2>Our Product Catalogue</h2>
+    <div class="products">
+      <div class="product-card">
+        <img src="images/hing1.jpg" alt="Hing Jar">
+        <h3>Sudha Hing 50g Jar</h3>
+        <p>Rich aroma, perfect for home kitchens.</p>
+        <a href="https://wa.me/919461331332?text=I%20want%20to%20buy%20Sudha%20Hing%2050g%20Jar" target="_blank">
+          <button>Buy on WhatsApp</button>
+        </a>
+      </div>
+      <div class="product-card">
+        <img src="images/hing2.jpg" alt="Hing Sachets">
+        <h3>Sudha Hing Sachets (10 Pack)</h3>
+        <p>Convenient, travel-friendly, and flavorful.</p>
+        <a href="https://wa.me/919461331332?text=I%20want%20to%20buy%20Sudha%20Hing%20Sachets%20(10%20Pack)" target="_blank">
+          <button>Buy on WhatsApp</button>
+        </a>
+      </div>
+      <div class="product-card">
+        <img src="images/hing3.jpg" alt="Premium Hing">
+        <h3>Sudha Premium Hing 100g</h3>
+        <p>Strongest aroma for restaurant-grade taste.</p>
+        <a href="https://wa.me/919461331332?text=I%20want%20to%20buy%20Sudha%20Premium%20Hing%20100g" target="_blank">
+          <button>Buy on WhatsApp</button>
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="contact" id="contact">
+    <h2>Contact Us / संपर्क करें</h2>
+    <form id="contact-form">
+      <input type="text" placeholder="Your Name / आपका नाम" required>
+      <input type="email" placeholder="Your Email / आपका ईमेल" required>
+      <textarea placeholder="Your Message / आपका संदेश" required></textarea>
+      <button type="submit">Send / भेजें</button>
+    </form>
+    <p id="form-message"></p>
+    <p style="margin-top: 1rem; font-weight: bold;">Email: <a href="mailto:jainarpan35@gmail.com">jainarpan35@gmail.com</a></p>
+    <p style="margin-top: 0.5rem;">Address: Rishabh Broom House, Opp. Forest Office, Dahod Road, Banswara</p>
+    <p>Contact: <a href="tel:+919461331332">9461331332</a></p>
+
+    <div class="map-container">
+      <h3>Find Us on Google Maps</h3>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14731.24366308374!2d74.4341382!3d23.5462051!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3967e555b8fa0417%3A0x80d1d6fcfa65e66!2sDahod%20Rd%2C%20Banswara%2C%20Rajasthan!5e0!3m2!1sen!2sin!4v1719766912345!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Sudha Hing, Banswara. All rights reserved.</p>
+  </footer>
+
+  <a class="whatsapp-float" href="https://wa.me/919461331332" target="_blank">
+    <img src="images/whatsapp-icon.png" alt="WhatsApp Chat">
+  </a>
+
+  <script>
+    $(document).ready(function () {
+      $('#contact-form').on('submit', function (e) {
+        e.preventDefault();
+        $('#form-message').text('Thank you for contacting us! We will respond shortly via email.');
+        $('#contact-form')[0].reset();
+      });
+
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 50) {
+          $('.navbar').addClass('sticky');
+        } else {
+          $('.navbar').removeClass('sticky');
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>
