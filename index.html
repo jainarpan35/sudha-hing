@@ -14,66 +14,54 @@
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      background-color: #fdfcf8;
     }
-
     .whatsapp-float {
       position: fixed;
       bottom: 20px;
       right: 20px;
       z-index: 1000;
     }
-
     .whatsapp-float img {
       height: 60px;
       width: 60px;
       cursor: pointer;
     }
-
     .qr-code-about {
       float: right;
       margin-left: 2rem;
       animation: floatQR 2s infinite ease-in-out;
       text-align: center;
     }
-
     .qr-code-about img {
       max-width: 120px;
     }
-
     @keyframes floatQR {
       0%, 100% {
         transform: translateY(0);
       }
-
       50% {
         transform: translateY(-8px);
       }
     }
-
     .map-container {
       text-align: center;
       padding: 2rem;
     }
-
     .map-container iframe {
       width: 90%;
       height: 300px;
       border: none;
       border-radius: 10px;
     }
-
     .hero {
       text-align: center;
       padding: 2rem;
       background-color: #f8f8f8;
     }
-
     .navbar {
       background-color: #333;
       overflow: hidden;
     }
-
     .navbar ul {
       list-style-type: none;
       margin: 0;
@@ -82,11 +70,9 @@
       justify-content: center;
       flex-wrap: wrap;
     }
-
     .navbar li {
       margin: 0 1rem;
     }
-
     .navbar a {
       color: white;
       text-decoration: none;
@@ -94,31 +80,24 @@
       display: block;
       transition: background 0.3s;
     }
-
     .navbar a:hover {
       background-color: #555;
     }
-
     .sticky {
       position: fixed;
       top: 0;
       width: 100%;
       z-index: 100;
     }
-
-    .about,
-    .catalogue,
-    .contact {
+    .about, .catalogue, .contact {
       padding: 2rem;
     }
-
     .products {
       display: flex;
       flex-wrap: wrap;
-      justify-content: center;
-      gap: 2rem;
+      justify-content: space-around;
+      gap: 1rem;
     }
-
     .product-card {
       width: 300px;
       border: 1px solid #ddd;
@@ -126,38 +105,12 @@
       border-radius: 10px;
       text-align: center;
       transition: transform 0.3s, box-shadow 0.3s;
-      background: white;
     }
-
     .product-card:hover {
       transform: translateY(-5px);
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     }
-
-    .product-card img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 6px;
-    }
-
-    .product-card a button {
-      background-color: #25d366;
-      color: white;
-      padding: 0.6rem 1.2rem;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      transition: background 0.3s;
-      margin-top: 0.5rem;
-    }
-
-    .product-card a button:hover {
-      background-color: #1da851;
-    }
-
-    form input,
-    form textarea,
-    form button {
+    form input, form textarea, form button {
       display: block;
       width: 100%;
       margin-bottom: 1rem;
@@ -165,7 +118,6 @@
       border: 1px solid #ccc;
       border-radius: 5px;
     }
-
     form button {
       background-color: #28a745;
       color: white;
@@ -173,24 +125,20 @@
       cursor: pointer;
       transition: background 0.3s;
     }
-
     form button:hover {
       background-color: #218838;
     }
-
     footer {
       background-color: #222;
       color: white;
       text-align: center;
       padding: 1rem;
     }
-
     @media (max-width: 768px) {
       .qr-code-about {
         float: none;
         margin: 2rem auto;
       }
-
       .products {
         flex-direction: column;
         align-items: center;
@@ -198,6 +146,7 @@
     }
   </style>
 </head>
+
 <body>
   <header class="hero">
     <div class="overlay">
@@ -450,16 +399,14 @@
 
   <section class="contact" id="contact">
     <h2>Contact Us / संपर्क करें</h2>
-    <form id="contact-form">
-      <input type="text" placeholder="Your Name / आपका नाम" required>
-      <input type="email" placeholder="Your Email / आपका ईमेल" required>
-      <textarea placeholder="Your Message / आपका संदेश" required></textarea>
-      <button type="submit">Send / भेजें</button>
-    </form>
+    <form action="https://formspree.io/f/mldnaqed" method="POST">
+  <input type="text" name="name" placeholder="Your Name" required>
+  <input type="email" name="email" placeholder="Your Email" required>
+  <textarea name="message" placeholder="Your Message" required></textarea>
+  <button type="submit">Send</button>
+</form>
     <p id="form-message"></p>
-    <p style="margin-top: 1rem; font-weight: bold;">Email: <a href="mailto:jainarpan35@gmail.com">jainarpan35@gmail.com</a></p>
-    <p style="margin-top: 0.5rem;">Address: Rishabh Broom House, Opp. Forest Office, Dahod Road, Banswara</p>
-    <p>Contact: <a href="tel:+919461331332">9461331332</a></p>
+   
 
     <div class="map-container">
       <h3>Find Us on Google Maps</h3>
@@ -469,6 +416,9 @@
 
   <footer>
     <p>&copy; 2025 Sudha Hing, Banswara. All rights reserved.</p>
+ <p style="margin-top: 1rem; font-weight: bold;">Email: <a href="mailto:jainarpan35@gmail.com">jainarpan35@gmail.com</a></p>
+    <p style="margin-top: 0.5rem;">Address: Rishabh Broom House, Opp. Forest Office, Dahod Road, Banswara</p>
+    <p>Contact: <a href="tel:+919461331332">9461331332</a></p>
   </footer>
 
   <a class="whatsapp-float" href="https://wa.me/919461331332" target="_blank">
