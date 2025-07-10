@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rishabh Broom House | Premium Grass Brooms</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+<meta name="description" content="Rishabh Broom House - Premium Grass Broom Manufacturer from Banswara since 2009. High-quality eco-friendly handmade brooms for every household.">
+<meta name="keywords" content="Grass Broom, Banswara Broom, Eco-Friendly Brooms, Rishabh Broom House, Indian Broom Manufacturer">
+<meta property="og:title" content="Rishabh Broom House">
+<meta property="og:description" content="Premium Grass Brooms Manufacturer in Banswara, Rajasthan.">
+<meta property="og:image" content="images/logo.jpg">
+<meta property="og:url" content="https://rbhbanswara.in">
+
+  <style>
+body {
+  background-image: url('images/broom-bg.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 60%;
+  background-attachment: fixed;
+  background-blend-mode: lighten;
+  opacity: 0.98;
+}
+.background-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('images/broom-bg.png') center center no-repeat;
+  background-size: 60%;
+  opacity: 0.07;
+  z-index: -1;
+}
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #f0f8ff;
+      color: #333;
+    }
+#lightboxOverlay {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.8);
+  justify-content: center;
+  align-items: center;
+}
+
+#lightboxOverlay img {
+  max-width: 90vw;
+  max-height: 90vh;
+  border-radius: 10px;
+}
+header {
+  background: linear-gradient(135deg, #1e3c72, #2a5298); /* rich royal blue to indigo */
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.2rem 2rem;
+  border-bottom: 4px solid #003366;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  flex-wrap: wrap;
+  border-radius: 0 0 20px 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.logo {
+  height: 70px;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.4);
+}
+
+.guru-img {
+  height: 80px;
+  border-radius: 10px;
+  border: 2px solid #fff;
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.4);
+}
+
+.header-center {
+  text-align: center;
+  flex-grow: 1;
+}
+
+.header-center h1 {
+  font-size: 2.5rem;
+  margin: 0;
+  font-weight: 800;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px #00000077;
+  letter-spacing: 1px;
+}
+
+.header-center p {
+  font-size: 1.1rem;
+  margin: 0;
+  color: #d3e7ff;
+  text-shadow: 1px 1px 3px #00000055;
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .guru-img {
+    margin-top: 1rem;
+    height: 65px;
+  }
+
+  .logo {
+    height: 60px;
+  }
+
+  .header-center h1 {
+    font-size: 2rem;
+  }
+
+  .header-center p {
+    font-size: 0.95rem;
+  }
+}
+
+
+    section {
+      padding: 3rem 1rem;
+      text-align: center;
+      background: white;
+    }
+
+    .about p, .enhanced-about p {
+      max-width: 900px;
+      margin: 1rem auto;
+      line-height: 1.7;
+    }
+
+    .enhanced-about ul {
+      max-width: 700px;
+      margin: auto;
+      text-align: left;
+    }
+
+    .enhanced-about li {
+      margin: 0.5rem 0;
+    }
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+  background: #f5faff;
+}
+
+.product {
+  width: 300px;
+  height: 450px; /* fixed height */
+  background: linear-gradient(145deg, #ffffff, #e9f0f8);
+  border: 2px solid #cce5ff;
+  border-radius: 16px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  animation: fadeInUp 0.6s ease both;
+  padding: 1rem;
+}
+
+.product:hover {
+  transform: scale(1.03);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.12);
+  border-color: #74c0fc;
+}
+
+.product img {
+  max-height: 220px;
+  object-fit: cover;
+  border-radius: 8px;
+  width: 100%;
+}
+
+.product p {
+  font-weight: 600;
+  color: #333;
+  margin: 1rem 0 0.5rem;
+}
+
+/* WhatsApp button */
+.product a {
+  background: #25D366;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+
+.product a:hover {
+  background: #128C7E;
+}
+
+/* Entry animation */
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.whatsapp-product-button {
+  display: block;
+  background-color: #25D366;
+  color: white;
+  text-align: center;
+  padding: 0.6rem;
+  margin: 0 1rem 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+
+.whatsapp-product-button:hover {
+  background-color: #1ebe5a;
+}
+.whatsapp-product-button {
+  display: block;
+  background-color: #25D366;
+  color: white;
+  text-align: center;
+  padding: 0.6rem;
+  margin: 0 1rem 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+
+.whatsapp-product-button:hover {
+  background-color: #1ebe5a;
+}
+   .videos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+  background: #f3f9ff;
+}
+
+.video-card {
+  width: 340px;
+  height: 480px;
+  background: linear-gradient(to bottom, #ffffff, #dcefff);
+  border: 2px solid #b3dfff;
+  border-radius: 16px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: all 0.3s ease;
+  padding: 1rem;
+}
+
+.video-card:hover {
+  transform: scale(1.03);
+  border-color: #5eb5ff;
+}
+
+.video-card video {
+  width: 100%;
+  height: auto;
+  max-height: 320px;
+  border-radius: 12px;
+  object-fit: contain;
+}
+
+/* Optional fade animation (re-use if defined already) */
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+    .contact form {
+      max-width: 600px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .contact input, .contact textarea {
+      margin: 0.5rem 0;
+      padding: 0.8rem;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    .contact button {
+      padding: 0.8rem;
+      background-color: #28a745;
+      color: white;
+      font-size: 1rem;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-top: 1rem;
+    }
+
+    footer {
+      background-color: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 1.5rem;
+    }
+
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 100;
+    }
+
+    .whatsapp-float img {
+      width: 60px;
+      height: 60px;
+    }
+
+footer {
+  background-color: #2c3e50;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.footer-left img {
+  height: 100px;
+  width: auto;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(255,255,255,0.2);
+}
+
+.footer-right {
+  flex-grow: 1;
+  padding-left: 2rem;
+}
+
+.footer-right p {
+  margin: 0.2rem 0;
+}
+.section-divider {
+  border: none;
+  height: 3px;
+  background: linear-gradient(to right, #00b09b, #96c93d);
+  margin: 3rem auto;
+  width: 80%;
+  border-radius: 5px;
+}
+
+.section-heading {
+  text-align: center;
+  font-size: 2rem;
+  color: #06518d;
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+
+
+@media (max-width: 768px) {
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-right {
+    padding: 1rem 0 0;
+  }
+}
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+
+      .product {
+        width: 90%;
+      }
+    }
+.simple-nav {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  background: #e3f2fd;
+  padding: 0.5rem 1rem;
+  border-radius: 0 0 12px 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  font-size: 0.95rem;
+}
+
+.simple-nav a {
+  text-decoration: none;
+  color: #0d47a1;
+  font-weight: 600;
+  padding: 0.3rem 0.8rem;
+  border-radius: 8px;
+  transition: background 0.2s;
+}
+
+.simple-nav a:hover {
+  background: #bbdefb;
+}
+.simple-nav a.active {
+  background: #64b5f6;
+  color: white;
+}
+
+
+  </style>
+</head>
+
+<body>
+<div class="background-overlay"></div>
+<header>
+  <img src="images/logo.jpg" alt="RBH Logo" class="logo">
+
+  <div class="header-center">
+    <h1>Rishabh Broom House</h1>
+    <p>Banswara | Premium Grass Broom Manufacturer Since 2009</p>
+  </div>
+
+  <img src="images/1.jpg" alt="Guruji" class="guru-img">
+</header>
+
+<nav class="simple-nav">
+  <a href="index.html" id="home-tab">Home</a>
+  <a href="hing.html" id="hing-tab">Sudha Hing</a>
+</nav>
+
+  <section class="about" style="padding: 3rem 1rem; background: linear-gradient(120deg, #ffffff, #f0f8ff); text-align: center;">
+  <h2 style="font-size: 2.2rem; color: #0d47a1; margin-bottom: 1rem;">Welcome to <span style="color: #2e7d32;">Rishabh Broom House</span> – Banswara</h2>
+  <h3 style="font-size: 1.3rem; color: #333; margin-bottom: 2rem;">Manufacturer of <span style="color: #ef6c00; font-weight: bold;">Premium Grass Brooms</span></h3>
+  <p style="max-width: 900px; margin: auto; font-size: 1.05rem; line-height: 1.8; color: #555;">
+    At <strong style="color: #2e7d32;">Rishabh Broom House</strong>, we specialize in crafting high-quality grass brooms that are <span style="color: #1565c0; font-weight: 600;">durable</span>, <span style="color: #1565c0; font-weight: 600;">efficient</span>, and made with care. Based in <strong>Banswara, Rajasthan</strong>, our products are trusted by homes and businesses within a <strong style="color: #ef6c00;">200 km radius</strong>, spanning across parts of <strong>Rajasthan</strong>, <strong>Gujarat</strong>, and <strong>Madhya Pradesh</strong>.
+  </p>
+  <p style="max-width: 900px; margin: 2rem auto 1rem; font-size: 1.05rem; line-height: 1.8; color: #555;">
+    With a growing demand and a strong reputation, we are now <span style="font-weight: 600; color: #0d47a1;">expanding our reach</span> and inviting <span style="color: #2e7d32; font-weight: bold;">distributors and dealers</span> to join our journey.
+  </p>
+  <p style="max-width: 900px; margin: auto; font-size: 1.05rem; line-height: 1.8; color: #555;">
+    If you believe in <span style="font-weight: 600; color: #ef6c00;">quality</span> and are ready to grow with us, <strong>connect today</strong> and become a part of the <strong style="color: #2e7d32;">Rishabh Broom House</strong> network.
+  </p>
+</section>
+
+
+  <section class="enhanced-about" data-aos="fade-up">
+    <h2>Why Choose Our Brooms?</h2>
+    <p>Crafted with care, our brooms are:</p>
+    <ul>
+      <li><strong>Durable:</strong> Built to last, even under daily use</li>
+      <li><strong>Eco-Friendly:</strong> 100% natural and biodegradable</li>
+      <li><strong>Comfortable:</strong> Easy to grip and lightweight</li>
+      <li><strong>Versatile:</strong> Available in compact, standard, and long-handle designs</li>
+    </ul>
+  </section>
+
+ <section class="products" data-aos="zoom-in-up">
+  <!-- Example repeated with different image & name -->
+  <div class="product">
+    <img src="images/product1.jpg" alt="Premium Broom" onclick="openLightbox(this.src)">
+    <p>Premium Grass Broom</p>
+    <a class="whatsapp-product-button" href="https://wa.me/919461331332?text=I%20am%20interested%20in%20Premium%20Grass%20Broom" target="_blank">Enquire on WhatsApp</a>
+  </div>
+
+  <div class="product">
+    <img src="images/product2.jpg" alt="Long Handle" onclick="openLightbox(this.src)">
+    <p>Long Handle Broom</p>
+    <a class="whatsapp-product-button" href="https://wa.me/919461331332?text=I%20want%20more%20info%20on%20Long%20Handle%20Broom" target="_blank">Enquire on WhatsApp</a>
+  </div>
+
+  <div class="product">
+    <img src="images/product3.jpg" alt="Compact" onclick="openLightbox(this.src)">
+    <p>Compact Grass Broom</p>
+    <a class="whatsapp-product-button" href="https://wa.me/919461331332?text=Info%20on%20Compact%20Grass%20Broom" target="_blank">Enquire on WhatsApp</a>
+  </div>
+
+  <div class="product">
+    <img src="images/product4.jpg" alt="Heavy Duty" onclick="openLightbox(this.src)">
+    <p>Heavy Duty Broom</p>
+    <a class="whatsapp-product-button" href="https://wa.me/919461331332?text=Details%20about%20Heavy%20Duty%20Broom" target="_blank">Enquire on WhatsApp</a>
+  </div>
+
+  <div class="product">
+    <img src="images/product5.jpg" alt="Colorful Broom" onclick="openLightbox(this.src)">
+    <p>Colorful Broom</p>
+    <a class="whatsapp-product-button" href="https://wa.me/919461331332?text=Enquiry%20about%20Colorful%20Broom" target="_blank">Enquire on WhatsApp</a>
+  </div>
+
+  <div class="product">
+    <img src="images/product6.jpg" alt="Lightweight Broom" onclick="openLightbox(this.src)">
+    <p>Lightweight Broom</p>
+    <a class="whatsapp-product-button" href="https://wa.me/919461331332?text=Interested%20in%20Lightweight%20Broom" target="_blank">Enquire on WhatsApp</a>
+  </div>
+
+  <div class="product">
+    <img src="images/product7.jpg" alt="XL Handle Broom" onclick="openLightbox(this.src)">
+    <p>XL Handle Broom</p>
+    <a class="whatsapp-product-button" href="https://wa.me/919461331332?text=Want%20XL%20Handle%20Broom%20info" target="_blank">Enquire on WhatsApp</a>
+  </div>
+
+  <div class="product">
+    <img src="images/product8.jpg" alt="Natural Grass" onclick="openLightbox(this.src)">
+    <p>Natural Grass Broom</p>
+    <a class="whatsapp-product-button" href="https://wa.me/919461331332?text=Need%20Natural%20Grass%20Broom" target="_blank">Enquire on WhatsApp</a>
+  </div>
+
+  <div class="product">
+    <img src="images/product9.jpg" alt="Kitchen Broom" onclick="openLightbox(this.src)">
+    <p>Kitchen Broom</p>
+    <a class="whatsapp-product-button" href="https://wa.me/919461331332?text=Info%20on%20Kitchen%20Broom" target="_blank">Enquire on WhatsApp</a>
+  </div>
+
+  <div class="product">
+    <img src="images/product10.jpg" alt="Multi-Pack" onclick="openLightbox(this.src)">
+    <p>Multi-Pack Brooms</p>
+    <a class="whatsapp-product-button" href="https://wa.me/919461331332?text=Bulk%20Multi-Pack%20Brooms" target="_blank">Enquire on WhatsApp</a>
+  </div>
+
+  <div class="product">
+    <img src="images/product11.jpg" alt="Fine Bristle" onclick="openLightbox(this.src)">
+    <p>Fine Bristle Broom</p>
+    <a class="whatsapp-product-button" href="https://wa.me/919461331332?text=Fine%20Bristle%20Broom%20query" target="_blank">Enquire on WhatsApp</a>
+  </div>
+
+  <div class="product">
+    <img src="images/product12.jpg" alt="Traditional Broom" onclick="openLightbox(this.src)">
+    <p>Traditional Grass Broom</p>
+    <a class="whatsapp-product-button" href="https://wa.me/919461331332?text=Traditional%20Broom%20Details" target="_blank">Enquire on WhatsApp</a>
+  </div>
+</section>
+
+
+<!-- Lightbox overlay -->
+<div id="lightboxOverlay" onclick="closeLightbox()">
+  <img id="lightboxImage" src="" alt="Full Size">
+</div>
+<hr class="section-divider">
+<h2 class="section-heading">Watch Our Process</h2>
+
+  <section class="videos">
+  <div class="video-card">
+    <video controls poster="thumbnails/video1.jpg">
+      <source src="videos/video1.mp4" type="video/mp4" />
+    </video>
+    <p>AI RBH SHOWROOM</p>
+  </div>
+  <div class="video-card">
+    <video controls poster="thumbnails/video2.jpg">
+      <source src="videos/video2.mp4" type="video/mp4" />
+    </video>
+    <p>PRODUCT DISPLAY ON DIWALI</p>
+  </div>
+  <div class="video-card">
+    <video controls poster="thumbnails/video3.jpg">
+      <source src="videos/video3.mp4" type="video/mp4" />
+    </video>
+    <p>PRODUCTS SHUFFLE</p>
+  </div>
+  <div class="video-card">
+    <video controls poster="thumbnails/video4.jpg">
+      <source src="videos/video4.mp4" type="video/mp4" />
+    </video>
+    <p>PACKAGING</p>
+  </div>
+  <div class="video-card">
+    <video controls poster="thumbnails/video5.jpg">
+      <source src="videos/video5.mp4" type="video/mp4" />
+    </video>
+    <p>DIWALI DHAMAKA</p>
+  </div>
+  <div class="video-card">
+    <video controls poster="thumbnails/video6.jpg">
+      <source src="videos/video6.mp4" type="video/mp4" />
+    </video>
+    <p>BLOCKBUSTER PRODUCTS</p>
+  </div>
+</section>
+
+  <section class="contact" data-aos="fade-up">
+    <h2>Contact Us</h2>
+    <form action="https://formspree.io/f/mldnaqed" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="text" name="contact number" placeholder="Your Contact Number" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+  <div class="footer-left">
+    <img src="images/4.jpg" alt="RBH Shop" />
+  </div>
+  <div class="footer-right">
+    <p><strong>Rishabh Broom House</strong>, Dahod Road, Banswara, Rajasthan - 327001</p>
+    <p>Phone: +91-9461331332, +91-9887801332 | Email: jainarpan35@gmail.com</p>
+  </div>
+</footer>
+
+  <a href="https://wa.me/919461331332" class="whatsapp-float" target="_blank">
+    <img src="https://img.icons8.com/color/96/000000/whatsapp--v1.png" alt="WhatsApp Button">
+  </a>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+<script>
+  function openLightbox(src) {
+    document.getElementById('lightboxImage').src = src;
+    document.getElementById('lightboxOverlay').style.display = 'flex';
+  }
+
+  function closeLightbox() {
+    document.getElementById('lightboxOverlay').style.display = 'none';
+  }
+</script>
+<script>
+  // Detect current file name
+  const currentPage = window.location.pathname.split("/").pop();
+
+  // Apply 'active' class based on current file
+  if (currentPage === "index.html" || currentPage === "") {
+    document.getElementById("home-tab").classList.add("active");
+  } else if (currentPage === "hing.html") {
+    document.getElementById("hing-tab").classList.add("active");
+  }
+</script>
+
+</body>
+
+</html>

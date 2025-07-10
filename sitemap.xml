@@ -1,27 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Homepage -->
   <url>
-    <loc>https://jainarpan35.github.io/sudha-hing/</loc>
-    <lastmod>2025-06-29</lastmod>
+    <loc>https://rbhbanswara.in/</loc>
+    <lastmod>2025-07-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
+
+  <!-- Grass Broom Page -->
   <url>
-    <loc>https://jainarpan35.github.io/sudha-hing/#about</loc>
-    <lastmod>2025-06-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://jainarpan35.github.io/sudha-hing/#catalogue</loc>
-    <lastmod>2025-06-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://jainarpan35.github.io/sudha-hing/#contact</loc>
-    <lastmod>2025-06-29</lastmod>
+    <loc>https://rbhbanswara.in/rbh.html</loc>
+    <lastmod>2025-07-06</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.8</priority>
   </url>
+
+  <!-- Sudha Hing Page -->
+  <url>
+    <loc>https://rbhbanswara.in/hing.html</loc>
+    <lastmod>2025-07-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Optional internal anchors (not necessary but allowed) -->
+  <url>
+    <loc>https://rbhbanswara.in/#about</loc>
+    <lastmod>2025-07-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://rbhbanswara.in/#catalogue</loc>
+    <lastmod>2025-07-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://rbhbanswara.in/#contact</loc>
+    <lastmod>2025-07-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
 </urlset>

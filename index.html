@@ -2,447 +2,334 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sudha Hing | Premium Asafoetida</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="icon" type="image/png" href="images/logo.jpg">
+  <title>Rishabh Broom House | Premium Grass Brooms</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <meta name="description" content="Rishabh Broom House - Premium Grass Broom Manufacturer from Banswara since 2009. High-quality eco-friendly handmade brooms for every household.">
+  <meta name="keywords" content="Grass Broom, Banswara Broom, Eco-Friendly Brooms, Rishabh Broom House, Indian Broom Manufacturer">
+  <meta property="og:title" content="Rishabh Broom House">
+  <meta property="og:description" content="Premium Grass Brooms Manufacturer in Banswara, Rajasthan.">
+  <meta property="og:image" content="images/logo.jpg">
+  <meta property="og:url" content="https://rbhbanswara.in">
+
   <style>
     body {
+      margin: 0;
+      padding: 0;
       font-family: 'Poppins', sans-serif;
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
+      background-color: #f0f0f0;
+      background-image: url('images/mix-bg.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 60%;
+      background-attachment: fixed;
+      background-blend-mode: lighten;
+      opacity: 0.98;
     }
-    .whatsapp-float {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      z-index: 1000;
-    }
-    .whatsapp-float img {
-      height: 60px;
-      width: 60px;
-      cursor: pointer;
-    }
-    .qr-code-about {
-      float: right;
-      margin-left: 2rem;
-      animation: floatQR 2s infinite ease-in-out;
-      text-align: center;
-    }
-    .qr-code-about img {
-      max-width: 120px;
-    }
-    @keyframes floatQR {
-      0%, 100% {
-        transform: translateY(0);
-      }
-      50% {
-        transform: translateY(-8px);
-      }
-    }
-    .map-container {
-      text-align: center;
-      padding: 2rem;
-    }
-    .map-container iframe {
-      width: 90%;
-      height: 300px;
-      border: none;
-      border-radius: 10px;
-    }
-    .hero {
-      text-align: center;
-      padding: 2rem;
-      background-color: #f8f8f8;
-    }
-    .navbar {
-      background-color: #333;
-      overflow: hidden;
-    }
-    .navbar ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-    .navbar li {
-      margin: 0 1rem;
-    }
-    .navbar a {
-      color: white;
-      text-decoration: none;
-      padding: 1rem;
-      display: block;
-      transition: background 0.3s;
-    }
-    .navbar a:hover {
-      background-color: #555;
-    }
-    .sticky {
+
+    .background-overlay {
       position: fixed;
       top: 0;
+      left: 0;
       width: 100%;
-      z-index: 100;
+      height: 100%;
+      background: url('images/mix-bg.png') center center no-repeat;
+      background-size: 60%;
+      opacity: 0.07;
+      z-index: -1;
     }
-    .about, .catalogue, .contact {
-      padding: 2rem;
-    }
-    .products {
+
+    header {
+      background: linear-gradient(135deg, #1e3c72, #2a5298);
+      color: white;
       display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.2rem 2rem;
+      border-bottom: 4px solid #003366;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
       flex-wrap: wrap;
-      justify-content: space-around;
-      gap: 1rem;
+      border-radius: 0 0 20px 20px;
     }
-    .product-card {
-      width: 300px;
-      border: 1px solid #ddd;
-      padding: 1rem;
-      border-radius: 10px;
+
+    .logo, .guru-img {
+      height: 70px;
+      border-radius: 8px;
+    }
+
+    .header-center {
       text-align: center;
-      transition: transform 0.3s, box-shadow 0.3s;
+      flex-grow: 1;
     }
-    .product-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+    .header-center h1 {
+      font-size: 2.5rem;
+      margin: 0;
+      font-weight: 800;
+      color: #ffffff;
+      text-shadow: 2px 2px 4px #00000077;
     }
-    form input, form textarea, form button {
-      display: block;
-      width: 100%;
-      margin-bottom: 1rem;
-      padding: 0.8rem;
-      border: 1px solid #ccc;
-      border-radius: 5px;
+
+    .header-center p {
+      font-size: 1.1rem;
+      margin: 0;
+      color: #d3e7ff;
     }
-    form button {
-      background-color: #28a745;
-      color: white;
-      border: none;
-      cursor: pointer;
-      transition: background 0.3s;
+
+    section {
+      padding: 3rem 1rem;
+      text-align: center;
+      background: white;
     }
-    form button:hover {
-      background-color: #218838;
+
+    .about p, .enhanced-about p {
+      max-width: 900px;
+      margin: 1rem auto;
+      line-height: 1.7;
     }
+
+    .enhanced-about ul {
+      max-width: 700px;
+      margin: auto;
+      text-align: left;
+    }
+
+    .enhanced-about li {
+      margin: 0.5rem 0;
+    }
+.selection-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 3rem 1rem;
+  background: #f9f9f9; /* Changed from blue to light grey */
+}
+
+.selection-card {
+  flex: 1 1 350px;
+  max-width: 400px;
+  background: white;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  border: none;
+}
+
+.selection-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  background: linear-gradient(to bottom, #ffffff, #f0f8ff);
+}
+
+.selection-card img {
+  width: 120px;
+  margin-bottom: 1rem;
+}
+
+.selection-card h2 {
+  margin-bottom: 0.5rem;
+  color: #2c3e50;
+  font-size: 1.5rem;
+}
+
+.selection-card p {
+  font-size: 1rem;
+  color: #555;
+}
+  @media (max-width: 768px) {
+    .selection-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  footer {
+    background-color: #2c3e50;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1rem;
+    flex-wrap: wrap;
+  }
+
+  .footer-left {
+    flex: 0 0 auto;
+    margin-right: 1.5rem;
+  }
+
+  .footer-left img {
+    height: 80px;
+    width: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(255,255,255,0.2);
+  }
+
+  .footer-right {
+    flex: 1;
+    max-width: 600px;
+    text-align: left;
+  }
+
+  .footer-right p {
+    margin: 0.5rem 0;
+  }
+
+  @media (max-width: 768px) {
     footer {
-      background-color: #222;
-      color: white;
+      flex-direction: column;
       text-align: center;
-      padding: 1rem;
     }
+
+    .footer-right {
+      text-align: center;
+      margin-top: 1rem;
+    }
+  }
+    .whatsapp-float img {
+      width: 60px;
+      height: 60px;
+    }
+
     @media (max-width: 768px) {
-      .qr-code-about {
-        float: none;
-        margin: 2rem auto;
-      }
-      .products {
+      header {
         flex-direction: column;
-        align-items: center;
+        text-align: center;
+      }
+      .guru-img, .logo {
+        height: 60px;
+      }
+      .header-center h1 {
+        font-size: 2rem;
+      }
+      .header-center p {
+        font-size: 0.95rem;
+      }
+      footer {
+        flex-direction: column;
+        text-align: center;
+      }
+      .footer-right {
+        padding: 1rem 0 0;
       }
     }
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+    animation: floatWhatsApp 2s infinite ease-in-out;
+  }
+
+  .whatsapp-float img {
+    width: 60px;
+    height: 60px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+  }
+
+  .whatsapp-float img:hover {
+    transform: scale(1.1);
+  }
+
+  @keyframes floatWhatsApp {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-5px);
+    }
+  }
+
   </style>
 </head>
 
 <body>
-  <header class="hero">
-    <div class="overlay">
-      <img src="images/logo.png" alt="Sudha Hing Logo" style="height: 80px; margin-bottom: 1rem;">
-      <h1>Sudha Hing</h1>
-      <p>Shudhata ka Vaada, Swad ka Jaadu <br><span style="font-size:0.9rem;">शुद्धता का वादा, स्वाद का जादू</span></p>
+  <div class="background-overlay"></div>
+  <header>
+    <img src="images/1.jpg" alt="Guruji" class="guru-img">
+    <div class="header-center">
+      <h1>Rishabh Broom House</h1>
+      <p>Banswara | Since 2009</p>
     </div>
+    <img src="images/logo.jpg" alt="RBH Logo" class="logo">
   </header>
-
-  <nav class="navbar">
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#catalogue">Catalogue</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-
-  <section class="about" id="about">
-  <h2>About Sudha Hing</h2>
-  <div class="qr-code-about">
-    <p style="font-weight: bold; font-size: 0.9rem;">Scan WhatsApp</p>
-    <img src="images/whatsapp-qr.png" alt="WhatsApp QR">
-  </div>
+<section class="about" data-aos="fade-up">
+  <h2>About Us</h2>
   <p>
-    Sudha Hing is your trusted source for premium quality Hing (Asafoetida), sourced from the finest farms and processed with utmost care. Our products bring unmatched aroma and taste to every dish.
+    <strong>Welcome to <span style="color: #06518d;">Rishabh Broom House</span> – Banswara</strong><br />
+    <span style="font-size: 1.2rem; font-weight: bold; color: #2a5298;">Crafting Quality Since 2009</span>
   </p>
   <p>
-    सुधा हींग आपके भरोसेमंद स्रोत हैं उच्च गुणवत्ता वाली हींग के लिए, जिसे बेहतरीन खेतों से प्राप्त किया गया है और अत्यंत सावधानी से प्रोसेस किया गया है। हमारे उत्पाद हर व्यंजन में बेमिसाल खुशबू और स्वाद लाते हैं।
+    At <strong style="color: #1e3c72;">Rishabh Broom House</strong>, we proudly manufacture <span style="font-weight: bold; color: #28a745;">premium quality grass brooms</span>, known for their <em>strength, durability,</em> and traditional craftsmanship. Each broom is carefully handcrafted to ensure <strong>superior cleaning</strong> and <strong>long-lasting use</strong>.
   </p>
-
-  <p><strong>What is Hing (Asafoetida)?</strong></p>
-  <p><em>Hing</em>, also known as <em>Asafoetida</em>, is a spice derived from the resin of the ferula plant, mostly found in the Middle East and Central Asia. Its strong pungent aroma transforms when cooked, giving a deep umami and savory flavor. For centuries, it has been a cornerstone of Indian cooking, Ayurvedic medicine, and digestive wellness.</p>
-
-  <p><strong>हींग क्या है?</strong></p>
-  <p><em>हींग</em> यानि ऐसोफेटीडा (जो की प्लांट के ग्दाज छिन्क से निकाली जाती है), भारतीय खान की आञग स्पाइसों में एक आवश्यक ग्ाली जाघा है। ऐयुर्वेद और चिकित्सा चिकित्सा में भी इसका कुब अन्य अमूल स्थान रहा है।</p>
-
-  <p><strong>Why Choose <span style="color:#28a745">Sudha Hing</span>?</strong></p>
-  <ul>
-    <li><strong>11+ Years of Trust:</strong> Serving households and businesses with the purest Hing for over a decade.</li>
-    <li><strong>Best in Segment:</strong> Known for its powerful aroma, longer shelf life, and high customer satisfaction.</li>
-    <li><strong>Pure & Natural:</strong> No adulteration, no fillers, just 100% premium grade Asafoetida.</li>
-    <li><strong>Handpicked & Hygienic:</strong> Each batch is selected and packed under strict quality checks.</li>
-    <li><strong>Multiple Packaging:</strong> Available in jars, sachets, and bulk for all needs.</li>
-    <li><strong>Customer Support:</strong> We are always just a WhatsApp away.</li>
-  </ul>
-
-  <p><strong>क्यों चुनें <span style="color:#28a745">Sudha Hing</span>?</strong></p>
-  <ul>
-    <li><strong>11 साल का अनुभव:</strong> एक ट्रस्टेड नाम और गुणवत्ता से युक्त हींग की चौटिछ साल चालू सेवाओं की सेवा कार्य कर रहे हैं।</li>
-    <li><strong>सेगमेंट में श्रेष्ठ:</strong> न्यूटे अरोमा, ज्यादा टीछ और उच्च ग्राहकता का भव प्र्योक्ता चिन्हित्स ग्राहक की जाती है।</li>
-    <li><strong>शुद्ध और कृत्रिम:</strong> कोई मिश्र्ण, कोई भारी नहीं। केवल एग्रेड हींग की गारंटी की आशासक्तता!</li>
-    <li><strong>चुनी गैओं और स्वछत्त पैकिंग:</strong> की गुणवत्ता के साथ चुनी जांच की जाती है।</li>
-    <li><strong>विभिन चैनों में उपलब्ध:</strong> जार, सैचेट और थोक के लिए उपलब्ध!</li>
-    <li><strong>बेहतरीन जनसंग:</strong> ट्यूरंग के लिए WhatsApp पर हमेशा कार!</li>
-  </ul>
+  <p>
+    We also produce <strong style="color: #b44b00;">Sudha Hing</strong>, a trusted name in <span style="color: #ff6600;">pure and aromatic asafoetida</span>, perfect for bringing <em>rich, authentic flavor</em> to your kitchen.
+  </p>
+  <p>
+    With a strong customer base spread across a <strong>200 km radius</strong> around Banswara—including parts of <strong>Rajasthan, Gujarat,</strong> and <strong>Madhya Pradesh</strong>—we have earned the trust of <span style="color: #2c3e50;">households, retailers,</span> and <span style="color: #2c3e50;">wholesalers</span> alike.
+  </p>
+  <p>
+    <strong style="color: #003366;">Now, we are looking to expand our reach</strong> and are actively seeking <span style="color: #dc3545; font-weight: bold;">distributors and dealer partners</span> who share our commitment to <em>quality and customer satisfaction</em>.
+  </p>
+  <p>
+    <span style="font-size: 1.1rem; font-weight: 600; color: #06518d;">Join hands with Rishabh Broom House – where <em>tradition meets trust</em>.</span>
+  </p>
 </section>
- <!DOCTYPE html>
-<html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sudha Hing | Premium Asafoetida</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <style>
-    body {
-      font-family: 'Poppins', sans-serif;
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    .whatsapp-float {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      z-index: 1000;
-    }
-    .whatsapp-float img {
-      height: 60px;
-      width: 60px;
-      cursor: pointer;
-    }
-    .qr-code-about {
-      float: right;
-      margin-left: 2rem;
-      animation: floatQR 2s infinite ease-in-out;
-      text-align: center;
-    }
-    .qr-code-about img {
-      max-width: 120px;
-    }
-    @keyframes floatQR {
-      0%, 100% {
-        transform: translateY(0);
-      }
-      50% {
-        transform: translateY(-8px);
-      }
-    }
-    .map-container {
-      text-align: center;
-      padding: 2rem;
-    }
-    .map-container iframe {
-      width: 90%;
-      height: 300px;
-      border: none;
-      border-radius: 10px;
-    }
-    .hero {
-      text-align: center;
-      padding: 2rem;
-      background-color: #f8f8f8;
-    }
-    .navbar {
-      background-color: #333;
-      overflow: hidden;
-    }
-    .navbar ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-    .navbar li {
-      margin: 0 1rem;
-    }
-    .navbar a {
-      color: white;
-      text-decoration: none;
-      padding: 1rem;
-      display: block;
-      transition: background 0.3s;
-    }
-    .navbar a:hover {
-      background-color: #555;
-    }
-    .sticky {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      z-index: 100;
-    }
-    .about, .catalogue, .contact {
-      padding: 2rem;
-    }
-    .products {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
-      gap: 1rem;
-    }
-    .product-card {
-      width: 300px;
-      border: 1px solid #ddd;
-      padding: 1rem;
-      border-radius: 10px;
-      text-align: center;
-      transition: transform 0.3s, box-shadow 0.3s;
-    }
-    .product-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    }
-    .product-card a button {
-      background-color: #25d366;
-      color: white;
-      padding: 0.6rem 1.2rem;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      transition: background 0.3s;
-      margin-top: 0.5rem;
-    }
-    .product-card a button:hover {
-      background-color: #1da851;
-    }
-    form input, form textarea, form button {
-      display: block;
-      width: 100%;
-      margin-bottom: 1rem;
-      padding: 0.8rem;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-    }
-    form button {
-      background-color: #28a745;
-      color: white;
-      border: none;
-      cursor: pointer;
-      transition: background 0.3s;
-    }
-    form button:hover {
-      background-color: #218838;
-    }
-    footer {
-      background-color: #222;
-      color: white;
-      text-align: center;
-      padding: 1rem;
-    }
-    @media (max-width: 768px) {
-      .qr-code-about {
-        float: none;
-        margin: 2rem auto;
-      }
-      .products {
-        flex-direction: column;
-        align-items: center;
-      }
-    }
-  </style>
-</head>
-
-<body>
-  <section class="catalogue" id="catalogue">
-    <h2>Our Product Catalogue</h2>
-    <div class="products">
-      <div class="product-card">
-        <img src="images/hing1.jpg" alt="Hing Jar">
-        <h3>Sudha Hing 50g Jar</h3>
-        <p>Rich aroma, perfect for home kitchens.</p>
-        <a href="https://wa.me/919461331332?text=I%20want%20to%20buy%20Sudha%20Hing%2050g%20Jar" target="_blank">
-          <button>Buy on WhatsApp</button>
-        </a>
-      </div>
-      <div class="product-card">
-        <img src="images/hing2.jpg" alt="Hing Sachets">
-        <h3>Sudha Hing Sachets (10 Pack)</h3>
-        <p>Convenient, travel-friendly, and flavorful.</p>
-        <a href="https://wa.me/919461331332?text=I%20want%20to%20buy%20Sudha%20Hing%20Sachets%20(10%20Pack)" target="_blank">
-          <button>Buy on WhatsApp</button>
-        </a>
-      </div>
-      <div class="product-card">
-        <img src="images/hing3.jpg" alt="Premium Hing">
-        <h3>Sudha Premium Hing 100g</h3>
-        <p>Strongest aroma for restaurant-grade taste.</p>
-        <a href="https://wa.me/919461331332?text=I%20want%20to%20buy%20Sudha%20Premium%20Hing%20100g" target="_blank">
-          <button>Buy on WhatsApp</button>
-        </a>
-      </div>
-    </div>
-  </section>
+  
+<div class="selection-container">
+  <div class="selection-card" onclick="location.href='rbh.html'">
+    <img src="images/broom-bg.png" alt="Broom Icon">
+    <h2>Explore Broom Products</h2>
+    <p>View our <strong>premium grass broom</strong> collections since <strong>2009</strong>.</p>
+  </div>
+  <div class="selection-card" onclick="location.href='hing.html'">
+    <img src="images/logo.png" alt="Hing Icon">
+    <h2>Explore Sudha Hing</h2>
+    <p>Discover <strong>pure & aromatic</strong> asafoetida for every kitchen.</p>
+  </div>
+</div>
 
 
-  <section class="contact" id="contact">
-    <h2>Contact Us / संपर्क करें</h2>
-    <form action="https://formspree.io/f/mldnaqed" method="POST">
-  <input type="text" name="name" placeholder="Your Name" required>
-<input type="text" name="contact number" placeholder="Your Contact Number" >
-  <input type="email" name="email" placeholder="Your Email" required>
-  <textarea name="message" placeholder="Your Message" required></textarea>
-  <button type="submit">Send</button>
-</form>
-    <p id="form-message"></p>
-   
+  <section class="contact" data-aos="fade-up" style="background: white; padding: 3rem 1rem; text-align: center;">
+  <h2>Contact Us</h2>
+  <form action="https://formspree.io/f/mldnaqed" method="POST" style="max-width: 600px; margin: auto; display: flex; flex-direction: column; gap: 1rem;">
+    <input type="text" name="name" placeholder="Your Name" required style="padding: 0.8rem; font-size: 1rem; border: 1px solid #ccc; border-radius: 6px;" />
+    <input type="text" name="contact number" placeholder="Your Contact Number" required style="padding: 0.8rem; font-size: 1rem; border: 1px solid #ccc; border-radius: 6px;" />
+    <input type="email" name="email" placeholder="Your Email" required style="padding: 0.8rem; font-size: 1rem; border: 1px solid #ccc; border-radius: 6px;" />
+    <textarea name="message" rows="5" placeholder="Your Message" required style="padding: 0.8rem; font-size: 1rem; border: 1px solid #ccc; border-radius: 6px;"></textarea>
+    <button type="submit" style="padding: 0.8rem; background-color: #28a745; color: white; font-size: 1rem; border: none; border-radius: 6px; cursor: pointer;">Send Message</button>
+  </form>
+</section>
+  <a href="https://wa.me/919461331332" class="whatsapp-float" target="_blank">
+  <img src="https://img.icons8.com/color/96/000000/whatsapp--v1.png" alt="WhatsApp Button">
+</a>
 
-    <div class="map-container">
-      <h3>Find Us on Google Maps</h3>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14731.24366308374!2d74.4341382!3d23.5462051!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3967e555b8fa0417%3A0x80d1d6fcfa65e66!2sDahod%20Rd%2C%20Banswara%2C%20Rajasthan!5e0!3m2!1sen!2sin!4v1719766912345!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Sudha Hing, Banswara. All rights reserved.</p>
- <p style="margin-top: 1rem; font-weight: bold;">Email: <a href="mailto:jainarpan35@gmail.com">jainarpan35@gmail.com</a></p>
-    <p style="margin-top: 0.5rem;">Address: Rishabh Broom House, Opp. Forest Office, Dahod Road, Banswara</p>
-    <p>Contact: <a href="tel:+919461331332">9461331332</a></p>
-  </footer>
-
-  <a class="whatsapp-float" href="https://wa.me/919461331332" target="_blank">
-    <img src="images/whatsapp-icon.png" alt="WhatsApp Chat">
-  </a>
-
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
-    $(document).ready(function () {
-      $('#contact-form').on('submit', function (e) {
-        e.preventDefault();
-        $('#form-message').text('Thank you for contacting us! We will respond shortly via email.');
-        $('#contact-form')[0].reset();
-      });
-
-      $(window).scroll(function () {
-        if ($(this).scrollTop() > 50) {
-          $('.navbar').addClass('sticky');
-        } else {
-          $('.navbar').removeClass('sticky');
-        }
-      });
-    });
+    AOS.init();
   </script>
+  <footer>
+  <div class="footer-left">
+    <img src="images/4.jpg" alt="Sudha Ba" />
+  </div>
+  <div class="footer-right">
+    <p><strong>Rishabh Broom House</strong></p>
+<p> Dahod Road, Banswara, Rajasthan - 327001</p>
+    <p>Phone: +91-9461331332, +91-9887801332 | Email: jainarpan35@gmail.com</p>
+  </div>
+</footer>
+
+
 </body>
 
 </html>
